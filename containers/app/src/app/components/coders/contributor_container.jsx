@@ -41,7 +41,7 @@ class ContributorsContainer extends Component {
         }
     }
 
-    componentDidMount() {
+    async componentDidMount() {
 
         const res =  await fetch('/api/coders');
         const contributors = res.data.coders;
